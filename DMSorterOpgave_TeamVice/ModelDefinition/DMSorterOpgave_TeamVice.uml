@@ -57,6 +57,61 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e0d9b20e-31e8-4771-8c37-5b09de442fed"
+            isDerived="false"
+            sourceEndRoleName="Opgave"
+            targetEndRoleName="Sorteret Opgaveliste"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
+              LastKnownName="Sorteret Opgaveliste"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="45ba6c83-b9bc-4ae1-8322-5253b859f6db"
+                  name="Opgave"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e5d49b8d-a78a-4448-9213-1bdfa50ba485"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ec631fcd-a8d9-4394-8d7a-ad880e2fe93f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9021812a-51e4-402a-88c7-37bf66eada21"
+                  name="Sorteret Opgaveliste"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="629781b1-3154-4f88-9981-f0095b8b6810"
@@ -241,6 +296,59 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="293aa715-862e-442d-b5ee-189a76b21353"
+            isDerived="false"
+            sourceEndRoleName="Ansat"
+            targetEndRoleName="Sorteret Opgaveliste"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
+              LastKnownName="Sorteret Opgaveliste"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b644695d-1331-4195-9a87-3bd61b536723"
+                  name="Ansat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97650128-0608-4839-8c83-446d2f022027"
+                  name="Sorteret Opgaveliste"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="43b13336-3342-44c2-be32-a4e86aefec04"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="52f1877f-7817-4105-8d63-6c79c7f935f1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -300,6 +408,14 @@
             isComposite="false" />
         </ownedAttributesInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
+        name="Sorteret Opgaveliste"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
