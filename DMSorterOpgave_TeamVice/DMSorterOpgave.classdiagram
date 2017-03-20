@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="30d3b197-4057-4f43-b91f-319d55ee5a9c" name="UMLClassDiagram1" linkedPackageId="f8f45dbe-af42-44cd-81ef-e68289039951" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f9cb7739-3c6d-428e-9d43-ff482029eaff">
+      <profileInstance Id="60b2f1a8-f065-4e82-8948-5635af14d69d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="728aa451-2766-4cf8-be6d-77aad3faa9fe">
+      <profileInstance Id="66f5fc85-13df-4c85-8360-92213fdb9d32" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d036a25-cce2-4157-88f8-94b9fba2991b" name="Vicevært" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b19df6f7-8575-4be7-8572-a773274ae4cc" />
+        <generalsInternal>
+          <generalization Id="38f84bcd-0427-4099-b617-303cb42a2f93" isSubstitutable="false">
+            <classMoniker Id="6109de96-b33d-48b3-bfc8-97e35eb69bd5" LastKnownName="Ansat" />
+            <elementDefinition Id="3a5297ee-dc38-4280-89a4-f702755e6d5a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="e0e7e420-c4aa-45d9-bbba-65fcbd0aad3c" name="Vice_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ae3baf8a-48f8-42db-a8f0-60e7b432b6ea" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8f4c15e-b515-4b19-8ed6-9dc95229df99" name="Opgave" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1446b7f-b0f2-44b5-a1a3-45a04dd4c033" />
+        <ownedAttributesInternal>
+          <property Id="443adfb6-8282-473b-82ef-7628304c3fe0" name="Opgave_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="629781b1-3154-4f88-9981-f0095b8b6810" />
+          </property>
+          <property Id="0b806ce2-e95a-400b-9acd-5d252bec16b4" name="Adresse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9e0fe88f-ab75-4983-98d5-ca66a4891412" />
+          </property>
+          <property Id="f67bb937-9682-4d4f-aac6-61d3af3197ba" name="Beskrivelse" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4e4fc675-79be-4eb5-b99c-a29cedf95b86" />
+          </property>
+          <property Id="2fca1444-5c1d-4212-b415-856b2075d2f0" name="Titel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54c4cd16-1aae-471d-a369-f93b402efe62" />
+          </property>
+          <property Id="01637142-d621-4252-9bb4-422977c19535" name="Anmelder" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c59d31d-4d7f-4567-a1e4-9dddd28ab2cb" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="942cc9ee-1004-443c-8299-7898e14ffdaa" name="Daglig Leder (DL)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6564e00b-2a94-478a-ab99-315caeb27aa4" />
+        <generalsInternal>
+          <generalization Id="5f748f07-8bb3-48c8-985c-6818e3db0020" isSubstitutable="false">
+            <classMoniker Id="6109de96-b33d-48b3-bfc8-97e35eb69bd5" LastKnownName="Ansat" />
+            <elementDefinition Id="5ff8564d-8ab5-40d1-86bd-428785d6c239" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="8e9d1f3a-0aa5-43ef-b2a4-f1665c218eff" name="DL_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3477de2f-56e7-4ea6-af42-193bf24bfdda" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1a2c290c-daca-450e-8c2e-2560a89756f0" name="Daglig Leder Assistent (DLA)" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e3932bd3-6ca4-4ebf-9f8a-530ee8830f23" />
+        <generalsInternal>
+          <generalization Id="fafd0bac-96a1-4adb-8ce6-aa4443f82567" isSubstitutable="false">
+            <classMoniker Id="6109de96-b33d-48b3-bfc8-97e35eb69bd5" LastKnownName="Ansat" />
+            <elementDefinition Id="f7b074a5-1353-4f0a-a194-44c841cea9f4" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="b430a28b-624d-4746-9438-67349475124a" name="DLA_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="40be258a-35ba-487e-9836-9c2222a3b6b5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6109de96-b33d-48b3-bfc8-97e35eb69bd5" name="Ansat" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66b57628-756c-48e9-bb53-b56488ac8bc8" />
+        <targetEnds>
+          <association Id="8727218d-4d74-48a5-abc8-cdb3f9e72570" isDerived="false" sourceEndRoleName="Ansat" targetEndRoleName="Opgave" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f8f4c15e-b515-4b19-8ed6-9dc95229df99" LastKnownName="Opgave" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="edee18e2-4206-4ff4-adbb-a683e4b636de" name="Ansat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f48df4aa-12f9-42db-994c-86af99b36e18" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2605882-cf7c-4f75-9bab-4e8d3248c706" name="Opgave" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="6a356806-84af-455e-945b-b65467a76f8d" name="Lower" value="*">
+                      <elementDefinition Id="5c09cea9-cb5f-43b9-9c42-1fc67375d0ac" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2a5803dd-a8a2-4034-a47e-c6c75d257479" name="Upper" value="*">
+                      <elementDefinition Id="47351fc3-6946-4295-bcef-47bd54506c79" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="64473abe-1470-4d89-acf1-9d7993cde73f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb6e73b6-90f0-4ed6-9d87-7753445a75ee" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f7bb7fd1-f416-4752-a09c-8e266da2c970" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f8d5a558-12ca-42b2-a548-0a74fef91cd8" />
+          </property>
+          <property Id="ed5e502e-a667-42bc-90ef-ac096ee69110" name="Telefon" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c4f5b3a-2d3a-472d-9875-970508d29ef5" />
+          </property>
+          <property Id="6cd4a97b-4cc5-41e6-b980-c379b2b1c73c" name="Titel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="101c4d75-e5b0-43e2-9ec0-f56dc9fee1b6" />
+          </property>
+          <property Id="5f89a043-1c64-46f3-90ce-3108880c5883" name="Arbejdstid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="68367bc9-cb0b-42ae-adea-1fa6d7bff546" />
+          </property>
+          <property Id="9ac1948f-fcec-48e1-a0bc-c2b65b33ab43" name="Afdeling" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cef7f335-0e8d-47f1-9c13-1b896cfd1599" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="f8f45dbe-af42-44cd-81ef-e68289039951" name="DMSorterOpgave_TeamVice">
+    <elementDefinition Id="a71925b1-1d12-4927-9185-b0b5a40841ff" />
+  </package>
+</logicalClassDesignerModel>
