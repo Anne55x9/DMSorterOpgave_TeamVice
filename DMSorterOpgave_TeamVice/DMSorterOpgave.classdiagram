@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="30d3b197-4057-4f43-b91f-319d55ee5a9c" name="UMLClassDiagram1" linkedPackageId="f8f45dbe-af42-44cd-81ef-e68289039951" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="30d3b197-4057-4f43-b91f-319d55ee5a9c" name="UMLClassDiagram1" linkedPackageId="f8f45dbe-af42-44cd-81ef-e68289039951" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="7d036a25-cce2-4157-88f8-94b9fba2991b" name="Vicevært" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -155,6 +155,32 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="293aa715-862e-442d-b5ee-189a76b21353" />
           </association>
+          <association Id="b18ce8a5-9cc9-4727-83ea-ca7eb7d850db" isDerived="false" sourceEndRoleName="Ansat" targetEndRoleName="Fasteopgaver" isLeaf="false" isAbstract="false">
+            <classMoniker Id="902cef85-33d9-4339-b375-103e15e939d4" LastKnownName="Fasteopgaver" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39a3253c-697e-47a2-b121-ba4dc312f1ca" name="Ansat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0926b9a0-db9a-438c-b88e-51ae0ab257c9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3caba8e3-02dc-4342-8dcd-6b5677e0d850" name="Fasteopgaver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ef44c02d-1502-47c1-a04f-a4ef98b6ec89" name="Lower" value="*">
+                      <elementDefinition Id="2594a00b-bd1c-41b8-a975-1417b4d9ea03" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2f926595-3653-44a6-88a3-0ca23f8818ad" name="Upper" value="*">
+                      <elementDefinition Id="c1da01af-bb78-4380-8d0c-c3b763d90820" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="b3911b06-09cf-4215-841f-954c4f9bc1fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="251dcaa1-d02b-499f-90e4-9e16e1b09cb5" />
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property Id="f7bb7fd1-f416-4752-a09c-8e266da2c970" name="Navn" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -178,6 +204,47 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="74e5b7e3-1646-47fc-b22c-3314aebc8955" name="Sorteret Opgaveliste" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c07d1f79-f9df-488b-acf1-59c2be585e54" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="902cef85-33d9-4339-b375-103e15e939d4" name="Fasteopgaver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="87e21997-8031-4ca4-905f-0699feb69b51" />
+        <targetEnds>
+          <association Id="872acb10-76e6-4e76-9396-86554076dcb0" isDerived="false" sourceEndRoleName="Fasteopgaver" targetEndRoleName="Sorteret Opgaveliste" isLeaf="false" isAbstract="false">
+            <classMoniker Id="74e5b7e3-1646-47fc-b22c-3314aebc8955" LastKnownName="Sorteret Opgaveliste" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74d2c47f-585b-4d59-ae61-7c7314125fc6" name="Fasteopgaver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="27077051-d4ee-47a8-bae3-f4170bb1aad1" name="Lower" value="*">
+                      <elementDefinition Id="ef23bd0b-ab38-459a-b126-6e2d81075649" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="161dbf34-093e-4e00-a1f9-f3315b646276" name="Upper" value="*">
+                      <elementDefinition Id="445e64fa-eeaa-4104-bd1a-7674798378bb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f3a080c5-3c9a-4eab-be47-1117746d62f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c280ddd0-fecd-4cbe-82df-df2ba80b5d33" name="Sorteret Opgaveliste" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9ba43ef8-a3a0-49fa-910e-b8428b09a253" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cb8a3a29-3a24-437f-9d0a-65d01484f7e0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="40db1c24-f0e0-4462-8d0c-fc1aaf38c412" name="Information" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="719c775d-b097-4fb7-a5fb-167085ce8353" />
+          </property>
+          <property Id="9cea72d8-8812-4f98-a99b-2d6cbb9993d9" name="FOpgaveId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b354e427-b609-4b99-ab53-10a15dd36142" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
