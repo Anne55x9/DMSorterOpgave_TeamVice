@@ -751,7 +751,7 @@
             isComposite="false" />
           <property
             Id="66248621-0308-4a60-a895-9f815ad860a7"
-            name="DepAdress"
+            name="DepAddress"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
