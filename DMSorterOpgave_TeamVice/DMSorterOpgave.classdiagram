@@ -212,6 +212,9 @@
           <property Id="f3507703-1e52-4d85-baff-2285ad1b8361" name="DepAdress" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="66248621-0308-4a60-a895-9f815ad860a7" />
           </property>
+          <property Id="ecb2f420-e7f2-4c50-90ec-a7d2c125b5ed" name="DepId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="657f20e0-4a90-41ad-a41c-48ed53bccd0d" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
