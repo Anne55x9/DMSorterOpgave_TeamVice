@@ -31,7 +31,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="66b57628-756c-48e9-bb53-b56488ac8bc8"
-              LastKnownName="Ansat"
+              LastKnownName="Employee"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
           </generalization>
         </generalsInternal>
@@ -53,7 +53,7 @@
     <packageHasNamedElement>
       <class
         Id="d1446b7f-b0f2-44b5-a1a3-45a04dd4c033"
-        name="Opgave"
+        name="Assignment"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -61,19 +61,19 @@
           <association
             Id="e0d9b20e-31e8-4771-8c37-5b09de442fed"
             isDerived="false"
-            sourceEndRoleName="Opgave"
-            targetEndRoleName="Sorteret Opgaveliste"
+            sourceEndRoleName="Assignment"
+            targetEndRoleName="SortAssignments"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
-              LastKnownName="Sorteret Opgaveliste"
+              LastKnownName="SortAssignments"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="45ba6c83-b9bc-4ae1-8322-5253b859f6db"
-                  name="Opgave"
+                  name="Assignment"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -99,7 +99,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="9021812a-51e4-402a-88c7-37bf66eada21"
-                  name="Sorteret Opgaveliste"
+                  name="SortAssignments"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -115,18 +115,7 @@
         <ownedAttributesInternal>
           <property
             Id="629781b1-3154-4f88-9981-f0095b8b6810"
-            name="Opgave_Id"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="9e0fe88f-ab75-4983-98d5-ca66a4891412"
-            name="Adresse"
+            name="AssignText"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -137,7 +126,7 @@
             isComposite="false" />
           <property
             Id="4e4fc675-79be-4eb5-b99c-a29cedf95b86"
-            name="Beskrivelse"
+            name="AssignTitel"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -147,19 +136,8 @@
             aggregation="None"
             isComposite="false" />
           <property
-            Id="54c4cd16-1aae-471d-a369-f93b402efe62"
-            name="Titel"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="7c59d31d-4d7f-4567-a1e4-9dddd28ab2cb"
-            name="Anmelder"
+            Id="d179cc10-9c77-4e6a-a252-b76ff27f63ef"
+            name="AssignId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -184,7 +162,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="66b57628-756c-48e9-bb53-b56488ac8bc8"
-              LastKnownName="Ansat"
+              LastKnownName="Employee"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
           </generalization>
         </generalsInternal>
@@ -216,7 +194,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="66b57628-756c-48e9-bb53-b56488ac8bc8"
-              LastKnownName="Ansat"
+              LastKnownName="Employee"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
           </generalization>
         </generalsInternal>
@@ -238,7 +216,7 @@
     <packageHasNamedElement>
       <class
         Id="66b57628-756c-48e9-bb53-b56488ac8bc8"
-        name="Ansat"
+        name="Employee"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -246,19 +224,19 @@
           <association
             Id="cb6e73b6-90f0-4ed6-9d87-7753445a75ee"
             isDerived="false"
-            sourceEndRoleName="Ansat"
-            targetEndRoleName="Opgave"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Assignment"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="d1446b7f-b0f2-44b5-a1a3-45a04dd4c033"
-              LastKnownName="Opgave"
+              LastKnownName="Assignment"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="f48df4aa-12f9-42db-994c-86af99b36e18"
-                  name="Ansat"
+                  name="Employee"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -271,7 +249,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="64473abe-1470-4d89-acf1-9d7993cde73f"
-                  name="Opgave"
+                  name="Assignment"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -299,19 +277,19 @@
           <association
             Id="293aa715-862e-442d-b5ee-189a76b21353"
             isDerived="false"
-            sourceEndRoleName="Ansat"
-            targetEndRoleName="Sorteret Opgaveliste"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="SortAssignments"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
-              LastKnownName="Sorteret Opgaveliste"
+              LastKnownName="SortAssignments"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b644695d-1331-4195-9a87-3bd61b536723"
-                  name="Ansat"
+                  name="Employee"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -324,7 +302,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="97650128-0608-4839-8c83-446d2f022027"
-                  name="Sorteret Opgaveliste"
+                  name="SortAssignments"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -352,19 +330,19 @@
           <association
             Id="251dcaa1-d02b-499f-90e4-9e16e1b09cb5"
             isDerived="false"
-            sourceEndRoleName="Ansat"
-            targetEndRoleName="Fasteopgaver"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="RegularAssignment"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="87e21997-8031-4ca4-905f-0699feb69b51"
-              LastKnownName="Fasteopgaver"
+              LastKnownName="RegularAssignment"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="0926b9a0-db9a-438c-b88e-51ae0ab257c9"
-                  name="Ansat"
+                  name="Employee"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -377,7 +355,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="b3911b06-09cf-4215-841f-954c4f9bc1fd"
-                  name="Fasteopgaver"
+                  name="RegularAssignment"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -402,22 +380,64 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="b17ccf6e-d80b-4e16-b761-8a678ddaf55e"
+            isDerived="false"
+            sourceEndRoleName="Employee"
+            targetEndRoleName="Client"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="52eb6d24-0b9b-4bf5-93b3-60260d5aab11"
+              LastKnownName="Client"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a45838be-4cfa-4b0e-8129-bec6281abe80"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84a6c56b-b624-4add-860f-3a09875d48c3"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="64812ac8-ea67-4aba-906e-1070fca5960f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="de0dd20f-0bb7-4a98-a379-c7b18f2887c1"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="f8d5a558-12ca-42b2-a548-0a74fef91cd8"
-            name="Navn"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="8c4f5b3a-2d3a-472d-9875-970508d29ef5"
-            name="Telefon"
+            name="EmployeePhone"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -428,18 +448,7 @@
             isComposite="false" />
           <property
             Id="101c4d75-e5b0-43e2-9ec0-f56dc9fee1b6"
-            name="Titel"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="68367bc9-cb0b-42ae-adea-1fa6d7bff546"
-            name="Arbejdstid"
+            name="EmployeeTitel"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -450,7 +459,18 @@
             isComposite="false" />
           <property
             Id="cef7f335-0e8d-47f1-9c13-1b896cfd1599"
-            name="Afdeling"
+            name="EmployeeName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47ef5aa2-49e0-4511-b08e-c99af878a52f"
+            name="EmployeeId"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -465,7 +485,7 @@
     <packageHasNamedElement>
       <class
         Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
-        name="Sorteret Opgaveliste"
+        name="SortAssignments"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
@@ -473,7 +493,7 @@
     <packageHasNamedElement>
       <class
         Id="87e21997-8031-4ca4-905f-0699feb69b51"
-        name="Fasteopgaver"
+        name="RegularAssignment"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -481,19 +501,19 @@
           <association
             Id="cb8a3a29-3a24-437f-9d0a-65d01484f7e0"
             isDerived="false"
-            sourceEndRoleName="Fasteopgaver"
-            targetEndRoleName="Sorteret Opgaveliste"
+            sourceEndRoleName="RegularAssignment"
+            targetEndRoleName="SortAssignments"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="c07d1f79-f9df-488b-acf1-59c2be585e54"
-              LastKnownName="Sorteret Opgaveliste"
+              LastKnownName="SortAssignments"
               LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="f3a080c5-3c9a-4eab-be47-1117746d62f2"
-                  name="Fasteopgaver"
+                  name="RegularAssignment"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -519,7 +539,7 @@
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="9ba43ef8-a3a0-49fa-910e-b8428b09a253"
-                  name="Sorteret Opgaveliste"
+                  name="SortAssignments"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -535,7 +555,7 @@
         <ownedAttributesInternal>
           <property
             Id="719c775d-b097-4fb7-a5fb-167085ce8353"
-            name="Information"
+            name="RegAssignTitel"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -546,7 +566,379 @@
             isComposite="false" />
           <property
             Id="b354e427-b609-4b99-ab53-10a15dd36142"
-            name="FOpgaveId"
+            name="RegAssignId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5029a9e-dfec-43f4-8c78-d644306749ff"
+            name="RegAssignText"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1c71a64d-d6a4-4bce-bce4-c2aad84afc93"
+        name="Department"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="5fb974e7-193a-4a07-b983-071abb62208a"
+            isDerived="false"
+            sourceEndRoleName="Department"
+            targetEndRoleName="RegularAssignment"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="87e21997-8031-4ca4-905f-0699feb69b51"
+              LastKnownName="RegularAssignment"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22545c74-c04e-4db3-b631-7d2636a49bb7"
+                  name="Department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f52c68a0-9ce1-4765-adeb-ad7df90e603c"
+                  name="RegularAssignment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8acef833-306b-4190-83df-3fc85cfb19b9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fdc21594-21b8-4802-af48-1bb144c29f12"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33f1095e-f8cd-4d55-825c-38f1a074c292"
+            isDerived="false"
+            sourceEndRoleName="Department"
+            targetEndRoleName="Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="66b57628-756c-48e9-bb53-b56488ac8bc8"
+              LastKnownName="Employee"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="907ff87c-0bb2-45f0-873d-bf369612bf1a"
+                  name="Department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a616b659-c210-4ed5-bc59-590ed54a7ccf"
+                      name="Lower"
+                      value="1-3" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5599b515-98f8-4d72-a999-793d2043000a"
+                      name="Upper"
+                      value="1-3" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="069a0ff0-bedc-4187-95b8-ba7fdc01dfa5"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6680cd9a-7d4c-46c1-af67-8c478ad680f3"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b5afaf44-3ac0-4ec1-b301-d360f38e9c5e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fe7eada6-ec25-452c-a3b5-7347144e4a64"
+            name="DepCity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="90e2068a-573b-4094-94fe-1f2d79065fe8"
+            name="DepName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c00cd2e3-287b-4fb9-aa9b-0520d582e746"
+            name="DepZipCode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="66248621-0308-4a60-a895-9f815ad860a7"
+            name="DepAdress"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="52eb6d24-0b9b-4bf5-93b3-60260d5aab11"
+        name="Client"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="34808ab9-82a2-45a4-983d-5011e9dbccfe"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Assignment"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d1446b7f-b0f2-44b5-a1a3-45a04dd4c033"
+              LastKnownName="Assignment"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dc18b4f9-5dd6-4656-925d-8bccd513a963"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7abcc9e4-bd64-4792-ba43-1db50137ff14"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="045c6d59-698c-4593-8873-c29fc8e39a07"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa1e6d36-2257-4608-bc96-e7bc6d1ec5cb"
+                  name="Assignment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5c0f671c-867c-4a77-a74d-1e907c71f8eb"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a84c49ff-4691-4e9e-971b-dfa7d6c45e8f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c5f2f4a3-d374-43e5-bd26-ea6df5e0c37c"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Department"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1c71a64d-d6a4-4bce-bce4-c2aad84afc93"
+              LastKnownName="Department"
+              LastKnownLocation="DMSorterOpgave_TeamVice.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="219504f9-2f14-4b2d-a0fd-ad3431d6ce4f"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fe9813cd-1c0e-4b4d-8342-02bfbd58e804"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="56bd613c-ac4d-4690-a58d-629d4cbd197d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f0d69eb7-1060-4f31-93dd-ce123254e37f"
+                  name="Department"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3cb8c2e0-6a13-4bc4-a83c-5a30d8250b4c"
+            name="ClientId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e8e19e17-eed9-4180-a1d8-f7efb3228c72"
+            name="ClientPhone1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ee738c99-15d3-4392-80f2-954d25a4c39e"
+            name="ClientPhone2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="612a749e-d877-48ae-b620-1dade0e3cd46"
+            name="ClientBuildingNo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="939bb770-b233-4b83-85c4-c1bf61cc8b3b"
+            name="ClientName"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
